@@ -1,18 +1,7 @@
-// import React, { useState } from 'react';
-import {
-  StyleSheet,
-  TextInput,
-  View,
-  ImageBackground,
-  Text,
-  TouchableOpacity,
-  KeyboardAvoidingView,
-  Platform,
-
-} from "react-native";
-
 const RegistrationScreen = () => {
   console.log(Platform.OS);
+  console.log("Hello")
+
   // const [isKeyboard]
   return (
     <ImageBackground
@@ -23,7 +12,6 @@ const RegistrationScreen = () => {
         <View style={styles.form}>
           <View style={styles.imgBox}></View>
           <Text style={styles.title}>Регистрация</Text>
-
           <View style={styles.inputUserName}>
             <TextInput
               style={styles.input}
@@ -42,7 +30,6 @@ const RegistrationScreen = () => {
               placeholder="Адрес электронной почты"
             />
           </View>
-
           <View style={styles.inputPassword}>
             <TextInput
               style={styles.input}
@@ -68,7 +55,6 @@ const RegistrationScreen = () => {
   );
 };
 export default RegistrationScreen;
-
 const styles = StyleSheet.create({
   image: {
     flex: 1,
@@ -81,8 +67,7 @@ const styles = StyleSheet.create({
     paddingLeft: 16,
     paddingRight: 16,
     backgroundColor: "#FFFFFF",
-    borderTopRightRadius: 25,
-    borderTopLeftRadius: 25,
+    borderRadius: "25 25 0 0",
     justifyContent: "center",
     //    ...Platform.select({
     //   ios: {
