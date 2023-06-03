@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Project",
-    "slug": "Project",
+    "slug": "progect",
     "version": "1.0.0",
     "orientation": "default",
     "icon": "./assets/icon.png",
@@ -12,20 +12,34 @@
       "backgroundColor": "#ffffff"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/dca0bb59-537a-4e88-ada2-05f77721acbe"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.herlovanartur.progect"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.herlovanartur.progect"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "dca0bb59-537a-4e88-ada2-05f77721acbe"
+      }
+    },
+    "owner": "herlovanartur",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
     }
   }
 }
